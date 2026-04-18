@@ -22,10 +22,10 @@ async (conn, mek, m, { from, sender, reply }) => {
             return `${h}h ${m}m ${s}s`;
         };
 
-        const status = `*┏────〘 ᴘᴏᴘᴋɪᴅ 〙───⊷*
+        const status = `*┏────〘 𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃 〙───⊷*
 *┃* *🌐 Platform:* Heroku
 *┃* *📦 Mode:* ${config.MODE || 'private'}
-*┃* *👑 Owner:* ${config.OWNER_NAME || 'ᴘᴏᴘᴋɪᴅ'}
+*┃* *👑 Owner:* ${config.OWNER_NAME || 'Teddy'}
 *┃* *🔹 Prefix:* ${config.PREFIX || '.'}
 *┃* *🧩 Version:* 1.0.0 Beta
 *┃* *📁 Total Commands:* ${totalCmds}

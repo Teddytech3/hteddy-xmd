@@ -45,8 +45,8 @@ cmd({
             },
             message: {
                 contactMessage: {
-                    displayName: "Popkid Ke",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:popkid\nORG:popkid;\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: "𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: Teddy\nORG:Teddy;\nTEL;type=CELL;type=VOICE;waid=254799963583:+254799963583\nEND:VCARD`
                 }
             }
         };
@@ -56,7 +56,7 @@ cmd({
         iosMenu += `_Software Version: 17.4.1 (Stable)_\n\n`;
 
         iosMenu += sectionHeader("SYSTEM PROFILE");
-        iosMenu += row("Owner", "Popkid Ke");
+        iosMenu += row("Owner", "Teddy Tech");
         iosMenu += row("Uptime", runtime(process.uptime()));
         iosMenu += row("Mode", config.MODE.toUpperCase());
         iosMenu += sectionFooter;
@@ -84,7 +84,7 @@ cmd({
         iosMenu += row("Auto Like", toggle(config.AUTO_STATUS_REACT));
         iosMenu += sectionFooter;
 
-        iosMenu += `\n📌 _System status verified by Popkid Ke_`;
+        iosMenu += `\n📌 _System status verified by Teddy Tech_`;
 
         // --- Send Message with iOS Adjustments ---
         await conn.sendMessage(
@@ -102,7 +102,7 @@ cmd({
                         body: "Configuration Management Unit",
                         mediaType: 1,
                         thumbnailUrl: config.MENU_IMAGE_URL,
-                        sourceUrl: "https://wa.me/254111385747",
+                        sourceUrl: "https://wa.me/254799963583",
                         showAdAttribution: true
                     }
                 }

@@ -13,7 +13,7 @@ cmd({
     if (!isOwner) return reply("*❌ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ*");
 
     // Check for input
-    if (!text) return reply("*⚠️ ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ɴᴇᴡ ᴘʀᴇғɪx (ᴇ.ɢ .sᴇᴛᴘʀᴇғɪx Popkid)*");
+    if (!text) return reply("*⚠️ ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ɴᴇᴡ ᴘʀᴇғɪx (ᴇ.ɢ .sᴇᴛᴘʀᴇғɪx !)*");
 
     try {
         const previousPrefix = config.PREFIX;
@@ -31,31 +31,31 @@ cmd({
             },
             message: {
                 contactMessage: {
-                    displayName: " POPKID SETTINGS",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Popkid Ke\nORG:Popkid Systems;\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: " TEDDY-XMD SETTINGS",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Popkid Ke\nORG:𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃;\nTEL;type=CELL;type=VOICE;waid=254799963583:+254799963583\nEND:VCARD`
                 }
             }
         };
 
         // iOS Styled Caption
-        const caption = `* ᴘᴏᴘᴋɪᴅ ꜱʏꜱᴛᴇᴍ ᴄᴏɴꜰɪɢ* ⚙️\n\n` +
+        const caption = `* 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 ꜱʏꜱᴛᴇᴍ ᴄᴏɴꜰɪɢ* ⚙️\n\n` +
                         `*✨ ꜱᴛᴀᴛᴜꜱ:* Prefix Successfully Migrated\n\n` +
                         `*⬅️ ᴘʀᴇᴠɪᴏᴜꜱ:* 「 ${previousPrefix} 」\n` +
                         `*➡️ ᴄᴜʀʀᴇɴᴛ:* 「 ${newPrefix} 」\n\n` +
                         `*💡 ɴᴏᴛᴇ:* All commands including words/letters now trigger with *${newPrefix}*\n\n` +
-                        `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ-xᴍᴅ*`;
+                        `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳*`;
 
         // Send with Newsletter Context (Small Thumbnail - iOS Style)
         await conn.sendMessage(from, { 
-            image: { url: config.ALIVE_IMG || "https://files.catbox.moe/7t824v.jpg" }, 
+            image: { url: config.ALIVE_IMG || "https://files.catbox.moe/13nyhx.jpg" }, 
             caption: caption,
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                    newsletterName: "ᴘᴏᴘᴋɪᴅ ꜱʏꜱᴛᴇᴍ ᴜᴘᴅᴀᴛᴇꜱ",
+                    newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                    newsletterName: "𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 ꜱʏꜱᴛᴇᴍ ᴜᴘᴅᴀᴛᴇꜱ",
                     serverMessageId: 1
                 },
                 externalAdReply: {
@@ -63,8 +63,8 @@ cmd({
                     body: `ꜱʏꜱᴛᴇᴍ ᴘʀᴇꜰɪx: ${newPrefix}`,
                     mediaType: 1,
                     renderLargerThumbnail: false,
-                    thumbnailUrl: "https://files.catbox.moe/aapw1p.png",
-                    sourceUrl: "https://whatsapp.com/channel/0029Vb70ySJHbFV91PNKuL3T"
+                    thumbnailUrl: "https://files.catbox.moe/13nyhx.jpg",
+                    sourceUrl: "https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n"
                 }
             }
         }, { quoted: fakevCard });

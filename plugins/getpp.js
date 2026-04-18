@@ -38,13 +38,13 @@ cmd({
 
         // 3. Craft the Stylish Message
         const stylishMsg = `
-✨ *𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 𝐏𝐑𝐎𝐅𝐈𝐋𝐄* ✨
+✨ *𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃 𝐏𝐑𝐎𝐅𝐈𝐋𝐄* ✨
 
 👤 *𝐔𝐬𝐞𝐫:* @${userNumber}
 📂 *𝐒𝐭𝐚𝐭𝐮𝐬:* Successfully Retrieved
 🛡️ *𝐒𝐨𝐮𝐫𝐜𝐞:* Native WhatsApp Server
 
-> *𝐏𝐨𝐩𝐤𝐢𝐝 𝐀𝐈: 𝐒𝐢𝐦𝐩𝐥𝐞. 𝐅𝐚𝐬𝐭. 𝐑𝐞𝐥𝐢𝐚𝐛𝐥𝐞.*
+> *𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃: 𝐒𝐢𝐦𝐩𝐥𝐞. 𝐅𝐚𝐬𝐭. 𝐑𝐞𝐥𝐢𝐚𝐛𝐥𝐞.*
 `.trim();
 
         // 4. Send the result
@@ -52,13 +52,13 @@ cmd({
             image: { url: ppUrl },
             caption: stylishMsg,
             mentions: [target],
-            footer: botFooter || 'ᴘᴏᴘᴋɪᴅ ᴀɪ ᴋᴇɴʏᴀ 🇰🇪'
+            footer: botFooter || '𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 ᴋᴇɴʏᴀ 🇰🇪'
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: "✅", key: mek.key } });
 
     } catch (err) {
         console.error("GETPP ERROR:", err);
-        reply("❌ *Popkid, I couldn't fetch that!* \n\nThis happens if the user has hidden their profile picture or if the number is not on WhatsApp.");
+        reply("❌ *Teddy, I couldn't fetch that!* \n\nThis happens if the user has hidden their profile picture or if the number is not on WhatsApp.");
     }
 });

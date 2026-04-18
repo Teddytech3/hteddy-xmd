@@ -32,8 +32,8 @@ if(mime.includes("image")){
 
 await conn.sendMessage(from,{
 sticker: media,
-packname: "POPKID XMD",
-author: "Popkid Ke"
+packname: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃",
+author: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃"
 },{quoted:m})
 
 }
@@ -75,8 +75,8 @@ const sticker = fs.readFileSync(output)
 
 await conn.sendMessage(from,{
 sticker: sticker,
-packname: "POPKID XMD",
-author: "Popkid Ke"
+packname: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃",
+author: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃"
 },{quoted:m})
 
 fs.unlinkSync(input)

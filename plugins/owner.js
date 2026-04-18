@@ -3,7 +3,7 @@ const config = require('../config');
 
 cmd({
     pattern: "owner",
-    alias: ["developer", "popkid"],
+    alias: ["developer", "teddy"],
     desc: "Get information about the bot owner",
     category: "main",
     react: "👑",
@@ -11,11 +11,11 @@ cmd({
 },
 async (conn, mek, m, { from, reply }) => {
     try {
-        const ownerNumber = "254111385747"; // Your WhatsApp number
-        const ownerName = "Popkid Kenya";
-        const ownerOrg = "Popkid AI Labs";
-        const githubProfile = "https://github.com/popkidc";
-        const profilePic = "https://files.catbox.moe/j9ia5c.png"; // Your preferred image
+        const ownerNumber = "254799963583"; // Your WhatsApp number
+        const ownerName = "Teddy";
+        const ownerOrg = "Teddy Tech AI Labs";
+        const githubProfile = "https://github.com/Teddytech1";
+        const profilePic = "https://files.catbox.moe/13nyhx.jpg"; // Your preferred image
 
         // Define the vCard format
         const vcard = 'BEGIN:VCARD\n'
@@ -27,7 +27,7 @@ async (conn, mek, m, { from, reply }) => {
             + 'END:VCARD';
 
         // Message body
-        let ownerMsg = `👑 *POPKID-MD OWNER INFO* 👑
+        let ownerMsg = `👑 *TEDDY-XMD OWNER INFO* 👑
 
 👤 *Name:* ${ownerName}
 🌍 *Location:* Kenya 🇰🇪
@@ -53,8 +53,8 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                    newsletterName: 'POPKID UPDATES',
+                    newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                    newsletterName: 'TEDDY-XMD',
                     serverMessageId: 1
                 }
             }

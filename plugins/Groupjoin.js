@@ -37,13 +37,13 @@ cmd({
         await conn.groupAcceptInvite(groupLink);
 
         // Stylish Success Message
-        const successText = `✨ *POPKID-XD JOINER* ✨\n\n✔️ *Successfully Joined*\n👤 *Requested By:* ${pushname}\n\n> *I am now a member of the group. Ready to manage!*`;
+        const successText = `✨ *TEDDY-XMD JOINER* ✨\n\n✔️ *Successfully Joined*\n👤 *Requested By:* ${pushname}\n\n> *I am now a member of the group. Ready to manage!*`;
 
         await conn.sendMessage(from, { 
             text: successText,
             contextInfo: {
                 externalAdReply: {
-                    title: "POPKID-XD NETWORK",
+                    title: "TEDDY-XMD NETWORK",
                     body: "Group Entry Success",
                     mediaType: 1,
                     sourceUrl: "https://github.com/popkidmd",

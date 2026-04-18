@@ -47,7 +47,7 @@ async (from, Gifted, conText) => {
         // We use mentions so the admins actually get a notification
         let mentions = [...allAdmins, sender];
 
-        let text = `*${botName || 'POPKID AI'} TAG ADMINS*\n\n`;
+        let text = `*${botName || 'TEDDY-XMD'} TAG ADMINS*\n\n`;
         
         if (q && q.trim()) {
             text += `*Message:* ${q.trim()}\n\n`;

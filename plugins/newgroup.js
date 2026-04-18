@@ -2,9 +2,9 @@ const config = require('../config');
 const { cmd } = require('../command');
 
 // Newsletter settings
-const NEWSLETTER_JID = "120363423997837331@newsletter";
-const NEWSLETTER_NAME = "popkid xd";
-const BOT = "Popkid XD";
+const NEWSLETTER_JID = "120363421104812135@newsletter";
+const NEWSLETTER_NAME = "TEDDY-XMD";
+const BOT = "TEDDY-XMD";
 
 // Stylish context
 const getContextInfo = (title = "", body = "", sourceUrl = "") => ({
@@ -51,7 +51,7 @@ async (conn, mek, m, { from, sender, reply, react, q, isOwner }) => {
         // Check group name
         if (!q || !q.trim()) {
             await react("❌");
-            return reply("❌ Please provide a group name.\n\nExample:\n.newgc ATASSA MD");
+            return reply("❌ Please provide a group name.\n\nExample:\n.newgc TEDDY-XMD");
         }
 
         const groupName = q.trim();

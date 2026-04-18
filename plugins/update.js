@@ -23,8 +23,8 @@ async (conn, mek, m, { from, quoted, q, react, reply, isSuperUser, isOwner, setC
     }
 
     // repo settings (change if you want different repo/branch)
-    const repoOwner = "hostdeployment-bit";
-    const repoName = "POPKID-XD";
+    const repoOwner = "Teddytech3";
+    const repoName = "hteddy-xmd";
     const branch = "main";
     const apiCommitUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits/${branch}`;
     const zipUrl = `https://github.com/${repoOwner}/${repoName}/archive/${branch}.zip`;
@@ -55,8 +55,8 @@ async (conn, mek, m, { from, quoted, q, react, reply, isSuperUser, isOwner, setC
     }
 
     // ----- OVERRIDE DISPLAY -----
-    const authorName = "popkid";          // always show popkid
-    const authorEmail = "popkid@gmail.com"; // masked email
+    const authorName = "Teddy";          // always show popkid
+    const authorEmail = "imteddytech@hotmail.com"; // masked email
     const commitDate = new Date(commitData.commit.author.date).toLocaleString();
     const commitMessage = commitData.commit.message || "";
 

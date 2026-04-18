@@ -34,8 +34,8 @@ cmd({
             key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: "status@broadcast" },
             message: {
                 contactMessage: {
-                    displayName: "Popkid Ke",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:popkid\nORG:popkid;\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: "TEDDY-XMD",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:TEDDY-XMD\nORG:TEDDY-XMD;\nTEL;type=CELL;type=VOICE;waid=254799963583:+254799963583\nEND:VCARD`
                 }
             }
         };
@@ -45,8 +45,8 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                newsletterName: config.OWNER_NAME || 'POPKID',
+                newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                newsletterName: config.OWNER_NAME || 'TEDDY-XMD',
                 serverMessageId: 1
             }
         };

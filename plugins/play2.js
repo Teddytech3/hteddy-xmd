@@ -19,8 +19,8 @@ cmd({
             key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: "status@broadcast" },
             message: {
                 contactMessage: {
-                    displayName: " POPKID MUSIC",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Popkid Ke\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: " TEDDY-XMD MUSIC",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: TEDDY-XMD\nTEL;type=CELL;type=VOICE;waid=254799963583:+254799963583\nEND:VCARD`
                 }
             }
         };
@@ -47,17 +47,17 @@ cmd({
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                    newsletterName: "ᴘᴏᴘᴋɪᴅ ᴍᴜsɪᴄ",
+                    newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                    newsletterName: "𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 ᴍᴜsɪᴄ",
                     serverMessageId: 1
                 },
                 externalAdReply: {
-                    title: " ᴘᴏᴘᴋɪᴅ ᴍᴇᴅɪᴀ ᴇɴɢɪɴᴇ",
+                    title: " 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 ᴍᴇᴅɪᴀ ᴇɴɢɪɴᴇ",
                     body: "ʀᴇᴀᴅʏ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ",
                     mediaType: 1,
                     renderLargerThumbnail: false,
                     thumbnailUrl: meta.thumbnail || meta.image,
-                    sourceUrl: "https://whatsapp.com/channel/0029Vb70ySJHbFV91PNKuL3T"
+                    sourceUrl: "https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n"
                 }
             }
         }, { quoted: iosvCard });

@@ -2,9 +2,9 @@ const config = require('../config');
 const { cmd } = require('../command');
 
 // Newsletter settings
-const NEWSLETTER_JID = "120363423997837331@newsletter";
-const NEWSLETTER_NAME = "popkid xd";
-const BOT = "Popkid XD";
+const NEWSLETTER_JID = "120363421104812135@newsletter";
+const NEWSLETTER_NAME = "𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳";
+const BOT = "𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳";
 
 // Stylish context
 const getContextInfo = (title = "", body = "", sourceUrl = "") => ({
@@ -51,7 +51,7 @@ async (conn, mek, m, { from, sender, reply, react, q, isOwner }) => {
         // Check group name
         if (!q || !q.trim()) {
             await react("❌");
-            return reply("❌ Please provide a group name.\n\nExample:\n.newgc POPKID MD");
+            return reply("❌ Please provide a group name.\n\nExample:\n.newgc TEDDY-XMD");
         }
 
         const groupName = q.trim();
@@ -67,7 +67,7 @@ async (conn, mek, m, { from, sender, reply, react, q, isOwner }) => {
 
         // Success message
         const successText =
-`🆕 Popkid XD Group Created
+`🆕 TEDDY-XMD Group Created
 
 📛 Name : ${groupName}
 🆔 ID   : ${group.id}

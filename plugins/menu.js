@@ -2,7 +2,7 @@ const config = require('../config');
 const moment = require('moment-timezone');
 const { cmd, commands } = require('../command');
 
-const MENU_IMAGE_URL = "https://files.catbox.moe/aapw1p.png";
+const MENU_IMAGE_URL = "https://files.catbox.moe/13nyhx.jpg";
 
 // =====================
 // Simple Greeting Logic
@@ -41,8 +41,8 @@ async (conn, mek, m, { from, sender, pushName, reply }) => {
             },
             message: {
                 contactMessage: {
-                    displayName: "Popkid Ke",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:popkid\nORG:popkid;\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃\nORG:𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃;\nTEL;type=CELL;type=VOICE;waid=254799963583:+254799963583\nEND:VCARD`
                 }
             }
         };
@@ -76,7 +76,7 @@ async (conn, mek, m, { from, sender, pushName, reply }) => {
         // =====================
         let menu = `
 *┌─❖*
-*│POPKID XMD*
+*│𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃*
 *└┬❖*
    *│${greeting}*
    *└────────┈❖*
@@ -105,7 +105,7 @@ async (conn, mek, m, { from, sender, pushName, reply }) => {
         // =====================
         menu += `
 *┌─❖*
-*│POPKID XMD BOT*
+*│TEDDY-XMD BOT*
 *└──────────────❖*
 `;
 
@@ -114,8 +114,8 @@ async (conn, mek, m, { from, sender, pushName, reply }) => {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                newsletterName: config.OWNER_NAME || 'POPKID',
+                newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                newsletterName: config.OWNER_NAME || '𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃',
                 serverMessageId: 1
             }
         };
@@ -129,7 +129,7 @@ async (conn, mek, m, { from, sender, pushName, reply }) => {
             contextInfo: {
                 ...newsletterContextInfo,
                 externalAdReply: {
-                    title: "POPKID XMD",
+                    title: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃",
                     body: userName,
                     mediaType: 1,
                     renderLargerThumbnail: false 

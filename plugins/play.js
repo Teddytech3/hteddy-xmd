@@ -10,12 +10,12 @@ const { cmd } = require("../command");
 const config = require("../config");
 
 // Exact Newsletter and Bot Info
-const NEWSLETTER_JID = "120363423997837331@newsletter";
-const NEWSLETTER_NAME = "POPKID MD";
-const BOT = "POPKID-MD";
+const NEWSLETTER_JID = "120363421104812135@newsletter";
+const NEWSLETTER_NAME = "TEDDY-XMD";
+const BOT = "TEDDY-XMD";
 
 const buildCaption = (type, video) => {
-  const banner = type === "video" ? `🎬 POPKID MD VIDEO PLAYER` : `🎶 POPKID MD PLAYER`;
+  const banner = type === "video" ? `🎬 TEDDY-XMD VIDEO PLAYER` : `🎶 TEDDY-XMD PLAYER`;
   const duration = video.timestamp || video.duration || "N/A";
 
   return (
@@ -81,7 +81,7 @@ async (conn, mek, m, { from, args, q, quoted, isCmd, reply }) => {
             title: NEWSLETTER_NAME,
             body: "Get more info about this message.",
             mediaType: 1,
-            sourceUrl: "https://whatsapp.com/channel/0029VaeS6id0VycC9uY09s0F", // View Channel link
+            sourceUrl: "https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n", // View Channel link
             renderLargerThumbnail: false
         }
       }
@@ -95,7 +95,7 @@ async (conn, mek, m, { from, args, q, quoted, isCmd, reply }) => {
       contextInfo: {
         externalAdReply: {
           title: video.title,
-          body: "Popkid-MD Music",
+          body: "TEDDY-XMD Music",
           mediaType: 1,
           thumbnailUrl: video.thumbnail,
           renderLargerThumbnail: false

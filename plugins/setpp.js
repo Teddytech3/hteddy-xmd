@@ -10,7 +10,7 @@ cmd({
     try {
         // 1. Security Check: Only Owner or Group Admin should change the PP
         if (!isOwner && (!isGroup || !isAdmins)) {
-            return reply("❌ *Popkid, this command is restricted to Owner or Group Admins!*");
+            return reply("❌ *TEDDY-XMD, this command is restricted to Owner or Group Admins!*");
         }
 
         // 2. Check if an image is quoted or sent
@@ -18,7 +18,7 @@ cmd({
         const mime = (quotedMsg.msg || quotedMsg).mimetype || '';
 
         if (!/image/.test(mime)) {
-            return reply("📸 *Popkid, please reply to an image to set it as the profile picture!*");
+            return reply("📸 *𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃, please reply to an image to set it as the profile picture!*");
         }
 
         await conn.sendMessage(from, { react: { text: "⏳", key: mek.key } });
@@ -36,10 +36,10 @@ cmd({
             await conn.updateProfilePicture(conn.user.id, media);
             
             const successMsg = `
-✨ *𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 𝐔𝐏𝐃𝐀𝐓𝐄* ✨
+✨ *𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃 𝐔𝐏𝐃𝐀𝐓𝐄* ✨
 
 🖼️ *𝐒𝐭𝐚𝐭𝐮𝐬:* Profile Picture Changed
-👤 *𝐀𝐜𝐭𝐢𝐨𝐧 𝐛𝐲:* Popkid
+👤 *𝐀𝐜𝐭𝐢𝐨𝐧 𝐛𝐲:* Teddy
 🛡️ *𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲:* Native Encryption
 
 > *Your bot identity has been refreshed.*
@@ -47,7 +47,7 @@ cmd({
 
             await conn.sendMessage(from, { 
                 text: successMsg,
-                footer: botFooter || 'ᴘᴏᴘᴋɪᴅ ᴀɪ ᴋᴇɴʏ𝐚 🇰🇪'
+                footer: botFooter || '𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳ᴋᴇɴʏ𝐚 🇰🇪'
             }, { quoted: mek });
         }
 

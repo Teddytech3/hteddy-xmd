@@ -22,7 +22,7 @@ async (conn, mek, m, { from, q, reply, botFooter, botPic }) => {
         const uniqueId = Math.random().toString(36).substring(7);
 
         const fancyCaption = `
-✨ *𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 𝐅𝐁 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑* ✨
+✨ *𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃 𝐅𝐁 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑* ✨
 
 📝 *𝐓𝐢𝐭𝐥𝐞:* ${videoData.title || 'Facebook Video'}
 🚀 *𝐒𝐞𝐥𝐞𝐜𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐨𝐫𝐦𝐚𝐭:*
@@ -32,7 +32,7 @@ _You can select multiple options!_
         await sendButtons(conn, from, {
             title: `ꜰᴀᴄᴇʙᴏᴏᴋ ᴠɪᴅᴇᴏ ᴇɴɢɪɴᴇ`,
             text: fancyCaption,
-            footer: botFooter || 'ᴘᴏᴘᴋɪᴅ ᴀɪ ᴋᴇɴʏᴀ 🇰🇪',
+            footer: botFooter || '𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 ᴋᴇɴʏᴀ 🇰🇪',
             image: videoData.thumbnail || botPic,
             buttons: [
                 { id: `fbsd_${uniqueId}`, text: "📽️ 𝐒𝐃 𝐕𝐢𝐝𝐞𝐨" },

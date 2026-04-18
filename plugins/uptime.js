@@ -27,8 +27,8 @@ cmd({
             },
             message: {
                 contactMessage: {
-                    displayName: " POPKID-XMD",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:POPKID\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: " TEDDY-XMD",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:TEDDY-XMD\nTEL;type=CELL;type=VOICE;waid=254799963583:+254799963583\nEND:VCARD`
                 }
             }
         };
@@ -39,8 +39,8 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                newsletterName: "ᴘᴏᴘᴋɪᴅ-xᴍᴅ ɴᴇᴛᴡᴏʀᴋ",
+                newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                newsletterName: "TEDDY-XMD",
                 serverMessageId: 1
             },
             externalAdReply: {
@@ -48,8 +48,8 @@ cmd({
                 body: "ᴍᴏɴɪᴛᴏʀɪɴɢ ʟɪᴠᴇ ꜱᴇꜱꜱɪᴏɴ...",
                 mediaType: 1,
                 renderLargerThumbnail: false, // Removes the big black image
-                thumbnailUrl: "https://files.catbox.moe/aapw1p.png", // Small icon style
-                sourceUrl: "https://whatsapp.com/channel/0029Vb70ySJHbFV91PNKuL3T"
+                thumbnailUrl: "https://files.catbox.moe/13nyhx.jpg", // Small icon style
+                sourceUrl: "https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n"
             }
         };
 

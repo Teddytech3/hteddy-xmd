@@ -10,15 +10,15 @@ const { cmd } = require("../command");
 const config = require("../config");
 
 // Exact Newsletter and Bot Info for Popkid-MD
-const NEWSLETTER_JID = "120363423997837331@newsletter";
-const NEWSLETTER_NAME = "POPKID MD";
-const BOT = "POPKID-MD";
+const NEWSLETTER_JID = "120363421104812135@newsletter";
+const NEWSLETTER_NAME = "TEDDY-XMD";
+const BOT = "TEDDY-XMD";
 
 const buildCaption = (video) => {
   const duration = video.timestamp || video.duration || "N/A";
 
   return (
-    `*🎬 POPKID MD VIDEO PLAYER*\n\n` +
+    `*🎬 TEDDY-XMD VIDEO PLAYER*\n\n` +
     `╭───────────────◆\n` +
     `│ 📑 Title: ${video.title}\n` +
     `│ ⏳ Duration: ${duration}\n` +
@@ -38,11 +38,11 @@ const getContextInfo = (query = "", video = {}) => ({
   },
   externalAdReply: {
     title: video.title || BOT,
-    body: "Popkid-MD Video Downloader",
+    body: "TEDDY-XMD Video Downloader",
     mediaType: 1,
     renderLargerThumbnail: false, // Set to false for standard small size
     thumbnailUrl: video.thumbnail,
-    sourceUrl: video.url || "https://whatsapp.com/channel/0029VaeS6id0VycC9uY09s0F"
+    sourceUrl: video.url || "https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n"
   },
   body: query ? `Requested: ${query}` : undefined,
   title: BOT

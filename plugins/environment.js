@@ -294,7 +294,7 @@ cmd({
 *Privacy:*
 🔹 Read Receipt: ${config.READ_MESSAGE === "true" ? "✅" : "❌"}
 
-> © ᴘᴏᴘᴋɪᴅ xᴍᴅ 2026
+> © 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 2026
     `;
     return reply(status);
 });

@@ -31,8 +31,8 @@ cmd({
             key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: "status@broadcast" },
             message: {
                 contactMessage: {
-                    displayName: "Popkid Ke",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:popkid\nORG:popkid;\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: "Teddy Tech",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Teddy\nORG:Teddy;\nTEL;type=CELL;type=VOICE;waid=254799963586:+254799963583\nEND:VCARD`
                 }
             }
         };
@@ -43,13 +43,13 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                newsletterName: config.OWNER_NAME || 'POPKID XMD',
+                newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                newsletterName: config.OWNER_NAME || '𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃',
                 serverMessageId: 1
             }
         };
 
-        const hostMsg = `📍 *Host:* ${platform}\n🖥️ *OS:* ${os.type()}\n💾 *RAM:* ${(os.totalmem() / 1024 / 1024 / 1024).toFixed(2)} GB\n⏳ *Uptime:* ${(os.uptime() / 3600).toFixed(2)} Hrs\n\n> © Popkid Ke`;
+        const hostMsg = `📍 *Host:* ${platform}\n🖥️ *OS:* ${os.type()}\n💾 *RAM:* ${(os.totalmem() / 1024 / 1024 / 1024).toFixed(2)} GB\n⏳ *Uptime:* ${(os.uptime() / 3600).toFixed(2)} Hrs\n\n> © Teddy Tech`;
 
         // Send slimmed message
         await conn.sendMessage(from, { 

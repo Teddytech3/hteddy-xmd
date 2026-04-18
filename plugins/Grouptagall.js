@@ -21,7 +21,7 @@ cmd({
         let mentions = [];
         let tagMessage = `
 ╔═══════════════════╗
- ✨ *𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 𝐀𝐋𝐋* ✨
+ ✨ *𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃* ✨
 ╚═══════════════════╝
 
 📢 *𝐀𝐧𝐧𝐨𝐮𝐧𝐜𝐞𝐦𝐞𝐧𝐭:* _${q ? q : 'Hey everyone, pay attention to this group!'}_
@@ -39,7 +39,7 @@ cmd({
 
         tagMessage += `└──────────────⊷
 
-> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝🇰🇪*`;
+> *Powered by Teddy Tech 🇰🇪*`;
 
         // Forwarded newsletter style context info
         const newsletterContextInfo = {
@@ -47,18 +47,18 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                newsletterName: config.OWNER_NAME || 'POPKID',
+                newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                newsletterName: config.OWNER_NAME || '𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃',
                 serverMessageId: 1 // optional: can be any number
             }
         };
 
         // Send TagAll message with newsletter style
         await conn.sendMessage(from, { 
-            image: { url: 'https://files.catbox.moe/aapw1p.png' }, 
+            image: { url: 'https://files.catbox.moe/13nyhx.jpg' }, 
             caption: tagMessage, 
             mentions: mentions,
-            footer: botFooter || 'ᴘᴏᴘᴋɪᴅ ᴀɪ ᴋᴇɴʏᴀ 🇰🇪',
+            footer: botFooter || '𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 🇰🇪',
             contextInfo: newsletterContextInfo
         }, { quoted: mek });
 

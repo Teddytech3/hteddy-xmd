@@ -33,7 +33,7 @@ cmd({
             return reply("❌ *Antitag Disabled.*");
         }
 
-        reply(`🛡️ *Popkid-MD Antitag Settings*\n\nUsage: .antitag [on/off] [delete/warn/kick]`);
+        reply(`🛡️ *TEDDY-XMD Antitag Settings*\n\nUsage: .antitag [on/off] [delete/warn/kick]`);
     } catch (err) {
         reply("❌ Error updating settings.");
     }

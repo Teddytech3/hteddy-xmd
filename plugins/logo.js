@@ -85,7 +85,7 @@ singleEffects.forEach((effect) => {
 
             await conn.sendMessage(from, {
                 image: { url: data.result.image_url },
-                caption: `*${effect.react} POPKID AI: ${effect.pattern.toUpperCase()} ${effect.react}*\n\n*👤 Name:* ${name}\n\n*Created by Popkid Kenya*`
+                caption: `*${effect.react} 𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃: ${effect.pattern.toUpperCase()} ${effect.react}*\n\n*👤 Name:* ${name}\n\n*Created by 𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃*`
             }, { quoted: m });
         } catch (e) { reply(`*Error:* ${e.message}`); }
     });
@@ -121,7 +121,7 @@ dualEffects.forEach((effect) => {
 
             await conn.sendMessage(from, {
                 image: { url: data.result.image_url },
-                caption: `*${effect.react} POPKID AI: ${effect.pattern.toUpperCase()} ${effect.react}*\n\n*👤 Text 1:* ${t1}\n*👤 Text 2:* ${t2}\n\n*Created by Popkid Kenya*`
+                caption: `*${effect.react} 𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃: ${effect.pattern.toUpperCase()} ${effect.react}*\n\n*👤 Text 1:* ${t1}\n*👤 Text 2:* ${t2}\n\n*Created by 𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃*`
             }, { quoted: m });
         } catch (e) { reply(`*Error:* ${e.message}`); }
     });

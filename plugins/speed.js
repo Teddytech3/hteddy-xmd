@@ -22,8 +22,8 @@ cmd({
             key: { fromMe: false, participant: "0@s.whatsapp.net", remoteJid: "status@broadcast" },
             message: {
                 contactMessage: {
-                    displayName: "Popkid Ke",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:popkid\nORG:popkid;\nTEL;type=CELL;type=VOICE;waid=254111385747:+254111385747\nEND:VCARD`
+                    displayName: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃\nORG:𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃;\nTEL;type=CELL;type=VOICE;waid=254799963583:+254799963583\nEND:VCARD`
                 }
             }
         };
@@ -34,14 +34,14 @@ cmd({
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: config.NEWSLETTER_JID || '120363423997837331@newsletter',
-                newsletterName: config.OWNER_NAME || 'POPKID XMD',
+                newsletterJid: config.NEWSLETTER_JID || '120363421104812135@newsletter',
+                newsletterName: config.OWNER_NAME || 'TEDDY-XMD',
                 serverMessageId: 1
             }
         };
 
         // Clean Text output
-        const speedMessage = `🚀 *Response:* ${latency}ms\n🛸 *Lag:* ${(latency / 12).toFixed(2)}ms\n\n> © Popkid Ke`;
+        const speedMessage = `🚀 *Response:* ${latency}ms\n🛸 *Lag:* ${(latency / 12).toFixed(2)}ms\n\n> © 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳`;
 
         // Send message without the large thumbnail
         await conn.sendMessage(from, { 

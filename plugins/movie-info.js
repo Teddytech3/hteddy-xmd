@@ -35,7 +35,7 @@ async (conn, mek, m, { from, args, sender, reply }) => {
     // Take the first 5 results
     const results = json.results.items.slice(0, 5);
 
-    let textMsg = `🟩 *POPKID MOVIE FINDER*\n\n🎬 *Results for:* _${query}_\n\n`;
+    let textMsg = `🟩 *TEDDY-XMD MOVIE FINDER*\n\n🎬 *Results for:* _${query}_\n\n`;
     textMsg += `Reply with a number *(1-5)* to choose a movie.\n\n`;
 
     results.forEach((v, i) => {
@@ -51,8 +51,8 @@ async (conn, mek, m, { from, args, sender, reply }) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: "120363289379419860@newsletter",
-          newsletterName: "Popkid XTR",
+          newsletterJid: "120363421104812135@newsletter",
+          newsletterName: "TEDDY-XMD",
           serverMessageId: 202
         }
       }
@@ -117,8 +117,8 @@ async (conn, mek, m, { from, body, sender, reply }) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: "120363289379419860@newsletter",
-          newsletterName: "Popkid XTR",
+          newsletterJid: "120363421104812135@newsletter",
+          newsletterName: "TEDDY-XMD",
           serverMessageId: 203
         }
       }

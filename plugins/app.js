@@ -29,7 +29,7 @@ cmd({
 
         const fancyCaption = `
 ╔═══════════════════╗
-     📂  *𝐏𝐎𝐏𝐊𝐈𝐃-𝐌𝐃 𝐀𝐏𝐊* 📂
+     📂  *𝐓𝐄𝐃𝐃Y-𝐗𝐌𝐃 𝐀𝐏𝐊* 📂
 ╚═══════════════════╝
 
 📌 *𝐍𝐚𝐦𝐞:* ${app.name}
@@ -45,7 +45,7 @@ cmd({
         await sendButtons(conn, from, {
             title: `ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ`,
             text: fancyCaption,
-            footer: botFooter || 'ᴘᴏᴘᴋɪᴅ ᴀɪ ᴋᴇɴʏᴀ 🇰🇪',
+            footer: botFooter || 'TEDDY-XMD 🇰🇪',
             image: app.icon || botPic,
             buttons: [
                 { id: `appdoc_${dateNow}`, text: "📁 𝐒𝐞𝐧𝐝 𝐀𝐏𝐊 𝐅𝐢𝐥𝐞" },

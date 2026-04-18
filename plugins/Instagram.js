@@ -14,11 +14,11 @@ const verifiedContact = {
     },
     message: {
         contactMessage: {
-            displayName: "POP KIDS VERIFIED ✅",
+            displayName: "𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃 VERIFIED ✅",
             vcard: `BEGIN:VCARD
 VERSION:3.0
-FN:POP KIDS VERIFIED
-ORG:POP KIDS BOT;
+FN:𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃 VERIFIED
+ORG:𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃 BOT;
 TEL;type=CELL;type=VOICE;waid:${config.OWNER_NUMBER || "0000000000"}:+${config.OWNER_NUMBER || "0000000000"}
 END:VCARD`
         }
@@ -31,8 +31,8 @@ const newsletterContext = {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363289379419860@newsletter',
-            newsletterName: 'POP KIDS UPDATES',
+            newsletterJid: '120363421104812135@newsletter',
+            newsletterName: '𝐓𝐄𝐃𝐃𝐘-𝐗𝐌𝐃',
             serverMessageId: 143
         }
     }
@@ -60,7 +60,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
 │
 ├─ ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴠᴀʟɪᴅ ɪɴsᴛᴀɢʀᴀᴍ ᴠɪᴅᴇᴏ ʟɪɴᴋ.
 │
-╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘ ᴋɪᴅs 〕──`,
+╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 〕──`,
                 ...newsletterContext
             }, { quoted: verifiedContact });
         }
@@ -81,7 +81,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
 │
 ├─ ᴛʜᴀᴛ ɪs ɴᴏᴛ ᴀ ᴠᴀʟɪᴅ ɪɴsᴛᴀɢʀᴀᴍ ᴘᴏsᴛ, ʀᴇᴇʟ, ᴏʀ ᴛᴠ ʟɪɴᴋ.
 │
-╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘ ᴋɪᴅs 〕──`,
+╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 〕──`,
                 ...newsletterContext
             }, { quoted: verifiedContact });
         }
@@ -98,7 +98,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
 │
 ├─ ᴛʜᴇʀᴇ ᴡᴀs ɴᴏ ᴍᴇᴅɪᴀ ᴀᴛ ᴛʜᴇ ᴘʀᴏᴠɪᴅᴇᴅ ʟɪɴᴋ.
 │
-╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘ ᴋɪᴅs 〕──`,
+╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 〕──`,
                 ...newsletterContext
             }, { quoted: verifiedContact });
         }
@@ -122,7 +122,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
 ├─ ꜱᴏᴜʀᴄᴇ: ɪɴsᴛᴀɢʀᴀᴍ.ᴄᴏᴍ
 ├─ ꜱᴛᴀᴛᴜs: ✅ ᴄᴏᴍᴘʟᴇᴛᴇ
 │
-╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘ ᴋɪᴅs 〕──`,
+╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 〕──`,
                     ...newsletterContext
                 }, { quoted: verifiedContact });
             } else {
@@ -133,7 +133,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
 ├─ ꜱᴏᴜʀᴄᴇ: ɪɴsᴛᴀɢʀᴀᴍ.ᴄᴏᴍ
 ├─ ꜱᴛᴀᴛᴜs: ✅ ᴄᴏᴍᴘʟᴇᴛᴇ
 │
-╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘ ᴋɪᴅs 〕──`,
+╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 〕──`,
                     ...newsletterContext
                 }, { quoted: verifiedContact });
             }
@@ -146,7 +146,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
  │
  ├─ ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴡʜɪʟᴇ ᴘʀᴏᴄᴇssɪɴɢ ᴛʜᴇ ʟɪɴᴋ.
  │
- ╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘ ᴋɪᴅs 〕──`,
+ ╰──〔 📥 ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳 〕──`,
             ...newsletterContext
         }, { quoted: verifiedContact });
     }
