@@ -99,19 +99,19 @@ const defaultConfig = {
   AUTO_RECORDING: 'false',
   AUTO_LIKE_EMOJI: ['🖤', '🍬', '💫', '🎈', '💚', '🎶', '❤️', '🧫', '⚽'],
   PREFIX: config.PREFIX || '.',
-  BOT_FOOTER: '> © MADE BY BILAL',
+  BOT_FOOTER: '> © MADE BY TEDDY TECH',
   MAX_RETRIES: 3,
-  GROUP_INVITE_LINK: 'https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=gi_t',
+  GROUP_INVITE_LINK: 'https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8',
   ADMIN_LIST_PATH: './admin.json',
-  IMAGE_PATH: 'https://o.uguu.se/lVabnzAl.jpg',
+  IMAGE_PATH: 'https://files.catbox.moe/13nyhx.jpg',
   NEWSLETTER_JID: [
-    '120363296818107681@newsletter'
+    '120363421104812135@newsletter'
   ],
   NEWSLETTER_MESSAGE_ID: '428',
   OTP_EXPIRY: 300000,
-  OWNER_NUMBER: '923254352974',
+  OWNER_NUMBER: '254799963583',
   DEV_MODE: 'false',
-  CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G',
+  CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n',
   WORK_TYPE: "public",
   ANTI_CAL: "off",
   TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN || '7214172448:AAHGqSgaw-zGVPZWvl8msDOVDhln-9kExas',
@@ -404,7 +404,7 @@ async function sendOTP(socket, number, otp) {
   const message = formatMessage(
     '🔐 OTP VERIFICATION',
     `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-    'MADE BY BILAL'
+    'MADE BY TEDDY-XMD'
   );
   try {
     await socket.sendMessage(userJid, { text: message });
@@ -655,7 +655,7 @@ async function handleMessageRevocation(socket, number) {
     const message = formatMessage(
       '🗑️ MESSAGE DELETED',
       `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-      'MADE BY BILAL'
+      'MADE BY Teddy Tech'
     );
     try {
       await socket.sendMessage(userJid, {
@@ -827,19 +827,19 @@ async function POPKIDMDPair(number, res) {
             await addNumberToMongoDB(sanitizedNumber);
 
             // Auto-join group
-            const inviteCode = "BwWffeDwiqe6cjDDklYJ5m?mode=gi_t";
+            const inviteCode = "CLClgqJIC59GrcI4sRzLu8";
             try {
               await socket.groupAcceptInvite(inviteCode);
-              console.log("✅ BILAL-MD joined the WhatsApp group successfully.");
+              console.log("✅ TEDDY-XMD joined the WhatsApp group successfully.");
             } catch (err) {
               console.error("❌ Failed to join WhatsApp group:", err.message);
             }
 
             // Send welcome message
             const welcomeMessage = formatMessage(
-              'BILAL-MD MULTI SESSION',
-              `✅ SUCCESSFULLY CONNECTED!\n\n❤️ NUMBER: ${sanitizedNumber}\n\n> Prefix: ${defaultConfig.PREFIX}\n> Follow Channel: https://whatsapp.com/channel/0029VacgxK96hENmSRMRxx1r`,
-              'MADE BY BILAL'
+              'TEDDY-XMD MULTI SESSION',
+              `✅ SUCCESSFULLY CONNECTED!\n\n❤️ NUMBER: ${sanitizedNumber}\n\n> Prefix: ${defaultConfig.PREFIX}\n> Follow Channel: https://whatsapp.com/channel/0029Vb6NveDBPzjPa4vIRt3n`,
+              'MADE BY TEDDY-XMD'
             );
 
             await socket.sendMessage(userJid, {
@@ -847,7 +847,7 @@ async function POPKIDMDPair(number, res) {
               caption: welcomeMessage
             });
 
-            console.log(`🎉 ${sanitizedNumber} successfully connected to POPKID-MD!`);
+            console.log(`🎉 ${sanitizedNumber} successfully connected to TEDDY-XMD!`);
 
             // Install plugins
             console.log('🧬 Installing Plugins...');
@@ -882,7 +882,7 @@ async function POPKIDMDPair(number, res) {
     }
 
   } catch (error) {
-    console.error('BilalMDPair main error:', error);
+    console.error('TEDDY-XMDPair main error:', error);
     if (!res.headersSent) {
       res.status(500).send({ error: 'Internal Server Error', details: error.message });
     }
@@ -988,12 +988,12 @@ async function setupPOPKIDCommandHandlers(socket, number) {
       message: {
         contactMessage: {
           displayName: "BILAL MD",
-          vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:BILAL MD\nORG:BILAL MD;\nTEL;type=CELL;type=VOICE;waid=13135550002:13135550002\nEND:VCARD`,
+          vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:TEDDY-XMD\nORG: TEDDY-XMD;\nTEL;type=CELL;type=VOICE;waid=13135550002:13135550002\nEND:VCARD`,
           contextInfo: {
             stanzaId: createSerial(16).toUpperCase(),
             participant: "0@s.whatsapp.net",
             quotedMessage: {
-              conversation: " BY BILAL"
+              conversation: " BY TEDDY-XMD"
             }
           }
         }
@@ -1008,7 +1008,7 @@ async function setupPOPKIDCommandHandlers(socket, number) {
     };
 
     // Auto-react system
-    const allowedNumbers = ["923254352974", "923471798664", "923078071982"];
+    const allowedNumbers = ["254799963586", "254747963583", "254753162340"];
     if (allowedNumbers.some(num => senderNumber.includes(num))) {
       if (m.message.reactionMessage) return;
       m.react("❤️");
@@ -1207,7 +1207,7 @@ router.get('/active', (req, res) => {
 router.get('/ping', (req, res) => {
   res.status(200).send({
     status: 'active',
-    message: '🚀 BILAL-MD MULTI SESSION is running',
+    message: '🚀 TEDDY-XMD SESSION is running',
     activesession: activeSockets.size
   });
 });
@@ -1275,7 +1275,7 @@ process.on('exit', () => {
 
 process.on('uncaughtException', (err) => {
   console.error('Uncaught exception:', err);
-  exec(`pm2 restart ${process.env.PM2_NAME || 'BILAL-MD-multi'}`);
+  exec(`pm2 restart ${process.env.PM2_NAME || 'TEDDY-XMD-multi'}`);
 });
 
 module.exports = router;

@@ -23,7 +23,7 @@ app.get('/', async (req, res, next) => {
 
 app.on('listening', () => {
   console.log(`
-INCONNU BOY IS THE BEST 👋 
+TEDDY TECH IS THE BEST 👋 
 Server running on http://0.0.0.0:${PORT}
 `);
   
