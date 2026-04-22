@@ -71,6 +71,8 @@ const { fromBuffer } = require('file-type');
 const bodyparser = require('body-parser');
 const Crypto = require('crypto');
 const express = require("express");
+const http = require('http');
+const { MongoClient } = require('mongodb');
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -120,7 +122,7 @@ mongoose.connect(MONGODB_URI, {
   useUnifiedTopology: true
 }).then(() => {
   console.log('✅ Connected to MongoDB');
-  autoReconnectFromMongoDB(); // Auto reconnect all bots from DB on startup
+  autoReconnectFromMongoDB();
 }).catch(err => {
   console.error('❌ MongoDB connection error:', err);
 });
@@ -876,46 +878,3 @@ async function initConnection(number) {
     retryRequestDelayMs: 250,
     maxRetries: 5,
     markOnlineOnConnect: true,
-    syncFullHistory: false
-  });
-
-  activeSockets.set(number, { conn, saveCreds, connected: false, mongoClient: client });
-  setupHandlers(conn, number, saveCreds);
-  return conn;
-}
-
-async function useMongoDBAuthState(collectionName) {
-  const client = new MongoClient(MONGODB_URI);
-  await client.connect();
-  const db = client.db();
-  const coll = db.collection(collectionName);
-
-  const writeData = async (data, id) => {
-    await coll.updateOne({ _id: id }, { $set: {...data } }, { upsert: true });
-  };
-
-  const readData = async (id) => {
-    const doc = await coll.findOne({ _id: id });
-    return doc || null;
-  };
-
-  const removeData = async (id) => {
-    await coll.deleteOne({ _id: id });
-  };
-
-  const creds = (await readData('creds')) || {
-    noiseKey: {},
-    signedIdentityKey: {},
-    signedPreKey: {},
-    registrationId: 0,
-    advSecretKey: '',
-    nextPreKeyId: 1,
-    firstUnuploadedPreKeyId: 1,
-    account: {},
-    me: {},
-    signalIdentities: [],
-    lastAccountSyncTimestamp: 0,
-    myAppStateKeyId: null
-  };
-
-  return
