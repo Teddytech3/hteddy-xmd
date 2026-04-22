@@ -15,7 +15,7 @@ const {
 } = require('@whiskeysockets/baileys');
 
 const config = require('./config');
-const events = require('./inconnuboy');
+const events = require('./command');
 const { sms } = require('./lib/msg');
 const { 
     connectdb,
